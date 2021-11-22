@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
         {
             TakeDamage(1);
         }
+        if (currentHealth == 0)
+        {
+            Destroy(gameObject);
+        }
     }
     
     private void TakeDamage(int damage)
