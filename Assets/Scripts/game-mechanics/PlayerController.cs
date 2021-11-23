@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Animator _playerAnimation;
+
     Transform trans;
     Rigidbody2D body;
 
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         Walk();
 
+        _playerAnimation.SetFloat("Speed", Mathf.Abs(speed));
         if (Input.GetKeyDown(KeyCode.W))
         {
             jumpInput = true;
