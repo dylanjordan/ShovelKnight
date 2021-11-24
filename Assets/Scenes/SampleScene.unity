@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97032b018f75fc440b6dbc1b274593fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1903584101}
+  Player: {fileID: 0}
 --- !u!212 &1684435540
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1292,11 +1292,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884033018}
   m_CullTransparentMesh: 1
---- !u!1 &1903584101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3879963171167427957, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
-  m_PrefabInstance: {fileID: 3879963169305287026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1903584102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3879963171167427967, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
@@ -1713,11 +1708,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427960, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: speed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427960, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: jumpForce
-      value: 20
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427961, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: healthBarUI
@@ -1729,7 +1724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427962, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_Mass
-      value: 2.1623003
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427962, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_Simulated
@@ -1745,7 +1740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427962, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427967, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_RootOrder
