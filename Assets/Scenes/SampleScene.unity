@@ -1185,6 +1185,10 @@ PrefabInstance:
       propertyPath: healthBarUI
       value: 
       objectReference: {fileID: 1977631261}
+    - target: {fileID: 3879963171167427961, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
+      propertyPath: currentHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427962, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_Mass
       value: 2.1623003
