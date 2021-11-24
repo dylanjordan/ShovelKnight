@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Dragon
+  - Bug
   layers:
   - Default
   - TransparentFX
