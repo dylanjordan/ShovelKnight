@@ -42,13 +42,13 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Dragon")
         {
             TakeDamage(2);
-            playerBody.velocity = -playerBody.velocity * 100f;
+            playerBody.velocity = -playerBody.velocity * 0.5f;
         }
 
         if (collision.gameObject.tag == "Bug")
         {
             TakeDamage(1);
-            playerBody.velocity = -playerBody.velocity * 100f;
+            playerBody.velocity = -playerBody.velocity * 0.5f;
         }
     }
 }
