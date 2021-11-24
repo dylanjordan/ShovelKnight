@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int maxHealth = 8;
-    public int currentHealth;
+    public bool isAttacking;
+
+    public int _maxHealth = 8;
+    public int _currentHealth;
 
     public HealthBar healthBarUI;
 
     void Start()
     {
-        currentHealth = maxHealth;
-        healthBarUI.SetMaxHealth(maxHealth);
+        _currentHealth = _maxHealth;
+        healthBarUI.SetMaxHealth(_maxHealth);
     }
 
     void Update()
@@ -21,15 +23,15 @@ public class Player : MonoBehaviour
         {
             TakeDamage(1);
         }
-        if (currentHealth == 0)
+        if (_currentHealth == 0)
         {
             Destroy(gameObject);
         }
     }
 
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        healthBarUI.SetHealth(currentHealth);
+        _currentHealth -= damage;
+        healthBarUI.SetHealth(_currentHealth);
     }
 }
