@@ -26,11 +26,10 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
     private void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
         healthBarUI.SetHealth(currentHealth);
     }
 }
