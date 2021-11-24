@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ public class Bugs : MonoBehaviour
 {
 
     [SerializeField] float horizontalMoveSpeed;
-    [SerializeField] Transform cameraTrans;
+    [SerializeField] GameObject currentCam;
 
     Rigidbody2D body;
 
@@ -19,6 +20,9 @@ public class Bugs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        body.velocity = new Vector2(-horizontalMoveSpeed, body.velocity.y);
+        if (currentCam.activeInHierarchy == true)
+        {
+            body.velocity = new Vector2(-horizontalMoveSpeed, body.velocity.y);
+        }
     }
 }

@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalMoveSpeed: 2
-  cameraTrans: {fileID: 0}
+  currentCam: {fileID: 1789581334}
 --- !u!61 &676274091
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -655,7 +655,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &676274093
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -749,14 +749,14 @@ RectTransform:
   m_GameObject: {fileID: 797173960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.8541, y: 1.8541, z: 1.8541}
   m_Children: []
   m_Father: {fileID: 1188117165}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.25, y: -45.87201}
+  m_AnchoredPosition: {x: 0.25, y: -135}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797173962
@@ -1390,14 +1390,14 @@ RectTransform:
   m_GameObject: {fileID: 1884033018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 17.609251, y: 1, z: 1}
+  m_LocalScale: {x: 29.935728, y: 2.9626, z: 1}
   m_Children: []
   m_Father: {fileID: 1188117165}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.25, y: -50.5}
+  m_AnchoredPosition: {x: 0.25, y: -149}
   m_SizeDelta: {x: 66.328, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1884033020
@@ -1550,7 +1550,7 @@ RectTransform:
   m_GameObject: {fileID: 1977631259}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5018, y: 2.5018, z: 2.5018}
   m_Children:
   - {fileID: 1932529886}
   - {fileID: 2116952881}
@@ -1559,7 +1559,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -282, y: 212}
+  m_AnchoredPosition: {x: -484, y: 421}
   m_SizeDelta: {x: 100, y: 19.744}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1977631261
@@ -1859,11 +1859,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427960, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: speed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427960, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: jumpForce
-      value: 20
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427961, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: healthBarUI
@@ -1871,7 +1871,7 @@ PrefabInstance:
       objectReference: {fileID: 1977631261}
     - target: {fileID: 3879963171167427962, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_Mass
-      value: 2.1623003
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427962, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_Simulated
@@ -1887,7 +1887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427962, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_GravityScale
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427963, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_Size.x
