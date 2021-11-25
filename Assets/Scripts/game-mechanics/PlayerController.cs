@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.PlaySound("GameLoaded");
+
         trans = GetComponent<Transform>();
         body = GetComponent<Rigidbody2D>();
     }
