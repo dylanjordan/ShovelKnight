@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Dragon
   - Bug
+  - Spike
+  - Wall
   layers:
   - Default
   - TransparentFX

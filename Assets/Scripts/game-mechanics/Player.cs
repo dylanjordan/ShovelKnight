@@ -50,5 +50,9 @@ public class Player : MonoBehaviour
             TakeDamage(1);
             playerBody.velocity = -playerBody.velocity * 0.5f;
         }
+        if (collision.gameObject.tag == "Spike")
+        {
+            TakeDamage(8);
+        }
     }
 }

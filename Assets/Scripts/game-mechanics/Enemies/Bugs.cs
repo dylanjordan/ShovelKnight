@@ -6,7 +6,7 @@ using UnityEngine;
 public class Bugs : MonoBehaviour
 {
 
-    [SerializeField] float horizontalMoveSpeed;
+    [SerializeField] float Speed;
     [SerializeField] GameObject currentCam;
 
     Rigidbody2D body;
@@ -22,7 +22,14 @@ public class Bugs : MonoBehaviour
     {
         if (currentCam.activeInHierarchy == true)
         {
-            body.velocity = new Vector2(-horizontalMoveSpeed, body.velocity.y);
+            body.velocity = new Vector2(Speed, body.velocity.y);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            Speed = Speed * -1; 
         }
     }
 }
