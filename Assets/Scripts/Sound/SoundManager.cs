@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip playerHitSound, inGameBackgroundSound, jumpSound, walkSound, playerDeath;
+    public static AudioClip playerHitSound, inGameBackgroundSound, jumpSound, walkSound, playerDeath, dragonAttack, dragonDeath, bugDeath, dragonHurt;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -15,16 +15,13 @@ public class SoundManager : MonoBehaviour
         walkSound = Resources.Load<AudioClip>("Walking");
         playerHitSound = Resources.Load<AudioClip>("KnightHit");
         playerDeath = Resources.Load<AudioClip>("KnightDie");
+        dragonAttack = Resources.Load<AudioClip>("dragon_attack");
+        dragonDeath = Resources.Load<AudioClip>("dragon_death");
+        bugDeath = Resources.Load<AudioClip>("bug_death");
+        dragonHurt = Resources.Load<AudioClip>("dragon_hurt");
 
         audioSrc = GetComponent<AudioSource>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public static void PlaySound(string clip)
     {
         switch (clip)
@@ -40,6 +37,18 @@ public class SoundManager : MonoBehaviour
                 break;
             case "playerDeath":
                 audioSrc.PlayOneShot(playerDeath);
+                break;
+            case "dragonAttack":
+                audioSrc.PlayOneShot(dragonAttack);
+                break;
+            case "dragonDeath":
+                audioSrc.PlayOneShot(dragonDeath);
+                break;
+            case "bugDeath":
+                audioSrc.PlayOneShot(bugDeath);
+                break;
+            case "dragonHurt":
+                audioSrc.PlayOneShot(bugDeath);
                 break;
         }
     }

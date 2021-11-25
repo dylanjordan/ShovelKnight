@@ -9,12 +9,17 @@ public class Bugs : MonoBehaviour
     [SerializeField] float Speed;
     [SerializeField] GameObject currentCam;
 
+    public int _bugMaxHealth = 2;
+    public int _bugCurrentHealth;
+
     Rigidbody2D body;
     Transform bugTrans;
 
     // Start is called before the first frame update
     void Start()
     {
+        _bugCurrentHealth = _bugMaxHealth;
+
         bugTrans = GetComponent<Transform>();
         body = GetComponent<Rigidbody2D>();
     }
@@ -27,6 +32,11 @@ public class Bugs : MonoBehaviour
         if (currentCam.activeInHierarchy == true)
         {
             body.velocity = new Vector2(Speed, body.velocity.y);
+        }
+        if (_bugCurrentHealth == 0)
+        {
+            Destroy(gameObject);
+            SoundManager.PlaySound("bugDeath");
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -46,5 +56,18 @@ public class Bugs : MonoBehaviour
         {
             bugTrans.rotation = Quaternion.Euler(0, 180, 0);
         }
+    }
+    public void BugDamage(int damage)
+    {
+        _bugCurrentHealth -= damage;
+
+        //if (_bugcurrentHealth > 0)
+        //{
+
+        //}
+        //else
+        //{
+
+        //}
     }
 }
