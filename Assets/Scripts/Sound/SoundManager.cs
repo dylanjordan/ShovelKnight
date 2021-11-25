@@ -11,6 +11,7 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         inGameBackgroundSound = Resources.Load<AudioClip>("Menu Sound #1");
+        jumpSound = Resources.Load<AudioClip>("Jump");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -27,6 +28,9 @@ public class SoundManager : MonoBehaviour
         {
             case "GameLoaded":
                 audioSrc.PlayOneShot(inGameBackgroundSound);
+                break;
+            case "jumpSound":
+                audioSrc.PlayOneShot(jumpSound);
                 break;
         }
     }

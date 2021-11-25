@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
     {
         body.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         isGrounded = false;
+        SoundManager.PlaySound("jumpSound");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
