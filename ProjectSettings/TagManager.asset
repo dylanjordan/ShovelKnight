@@ -9,6 +9,7 @@ TagManager:
   - Bug
   - Spike
   - Wall
+  - Ladder
   layers:
   - Default
   - TransparentFX
