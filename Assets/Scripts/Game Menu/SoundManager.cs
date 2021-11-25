@@ -11,9 +11,9 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(!PlayerPrefs.HasKey("musicVolume"))
+        if(!PlayerPrefs.HasKey("Menu Sound #1"))
         {
-            PlayerPrefs.SetFloat("musicVolume", 1);
+            PlayerPrefs.SetFloat("Menu Sound #1", 1);
         }
         else
         {
@@ -31,13 +31,13 @@ public class SoundManager : MonoBehaviour
     
     private void Load()
     {
-        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        volumeSlider.value = PlayerPrefs.GetFloat("Menu Sound #1");
 
     }
 
     private void Save()
     {
-        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+        PlayerPrefs.SetFloat("Menu Sound #1", volumeSlider.value);
 
     }
 }
