@@ -35,6 +35,14 @@ public class Player : MonoBehaviour
     {
         _currentHealth -= damage;
         healthBarUI.SetHealth(_currentHealth);
+        if (_currentHealth > 0)
+        {
+            SoundManager.PlaySound("playerHit");
+        }
+        else
+        {
+            SoundManager.PlaySound("playerDeath");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

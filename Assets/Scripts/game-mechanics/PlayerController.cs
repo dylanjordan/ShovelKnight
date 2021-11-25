@@ -50,11 +50,13 @@ public class PlayerController : MonoBehaviour
         {
             trans.position -= transform.right * Time.deltaTime * speed;
             trans.rotation = Quaternion.Euler(0, 0, 0);
+            SoundManager.PlaySound("walkSound");
         }
         if (Input.GetKey(KeyCode.D))
         {
             trans.position -= transform.right * Time.deltaTime * speed;
             trans.rotation = Quaternion.Euler(0, 180, 0);
+            SoundManager.PlaySound("walkSound");
         }
     }
 
