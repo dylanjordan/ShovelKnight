@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip playerHitSound, inGameBackgroundSound, jumpSound, walkSound, playerDeath, dragonAttack, dragonDeath, bugDeath, dragonHurt, coinImpact;
+    public static AudioClip playerHitSound, jumpSound, walkSound, playerDeath, dragonAttack, dragonDeath, bugDeath, dragonHurt, coinImpact;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
     void Start()
     {
-        inGameBackgroundSound = Resources.Load<AudioClip>("Menu Sound #1");
         jumpSound = Resources.Load<AudioClip>("Jump");
         walkSound = Resources.Load<AudioClip>("Walking");
         playerHitSound = Resources.Load<AudioClip>("KnightHit");
@@ -27,9 +26,6 @@ public class SoundManager : MonoBehaviour
     {
         switch (clip)
         {
-            case "GameLoaded":
-                audioSrc.PlayOneShot(inGameBackgroundSound);
-                break;
             case "jumpSound":
                 audioSrc.PlayOneShot(jumpSound);
                 break;
