@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip playerHitSound, inGameBackgroundSound, jumpSound, walkSound, playerDeath, dragonAttack, dragonDeath, bugDeath, dragonHurt;
+    public static AudioClip playerHitSound, inGameBackgroundSound, jumpSound, walkSound, playerDeath, dragonAttack, dragonDeath, bugDeath, dragonHurt, coinImpact;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -19,6 +19,7 @@ public class SoundManager : MonoBehaviour
         dragonDeath = Resources.Load<AudioClip>("dragon_death");
         bugDeath = Resources.Load<AudioClip>("bug_death");
         dragonHurt = Resources.Load<AudioClip>("dragon_hurt");
+        coinImpact = Resources.Load<AudioClip>("Coin_impact");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -49,6 +50,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case "dragonHurt":
                 audioSrc.PlayOneShot(bugDeath);
+                break;
+            case "coinImpact":
+                audioSrc.PlayOneShot(coinImpact);
                 break;
         }
     }
