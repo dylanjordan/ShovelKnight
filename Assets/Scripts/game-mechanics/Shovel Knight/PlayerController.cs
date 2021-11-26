@@ -142,8 +142,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Platform"))
+        if (collision.gameObject.CompareTag("Platform") && isGrounded)
         {
+            isGrounded = false;
             player.transform.parent = null;
         }
     }
