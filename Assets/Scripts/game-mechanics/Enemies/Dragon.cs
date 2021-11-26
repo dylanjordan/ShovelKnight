@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Dragon : MonoBehaviour
@@ -30,6 +31,7 @@ public class Dragon : MonoBehaviour
         {
             Destroy(gameObject);
             SoundManager.PlaySound("dragonDeath");
+            SceneManager.LoadScene("Winner");
         }
         if ((currentCam.activeInHierarchy == true))
         {
