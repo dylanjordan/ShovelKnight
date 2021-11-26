@@ -14,10 +14,6 @@ public class ItemCount : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            itemAmount++;
-        }
         text.text = itemAmount.ToString();
     }
 }

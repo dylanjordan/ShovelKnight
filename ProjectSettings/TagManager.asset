@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Dragon
+  - Bug
+  - Spike
+  - Wall
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -12,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - MoreUI
   - 
   - 
   - 
