@@ -6,14 +6,9 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public Rigidbody2D playerBody;
-    
-    Dragon dragon;
-    Bugs bug;
 
     public int _maxHealth = 8;
     public int _currentHealth;
-
-    private bool isAttacking;
 
     public HealthBar healthBarUI;
 
@@ -48,36 +43,15 @@ public class Player : MonoBehaviour
             SoundManager.PlaySound("playerDeath");
         }
     }
-    public void Attacking()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            isAttacking = true;
-        }
-        else
-        {
-            isAttacking = false;
-        }
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Dragon" && !isAttacking)
+        if (collision.gameObject.tag == "Dragon")
         {
             TakeDamage(2);
-            playerBody.velocity = -playerBody.velocity * 0.5f;
         }
-        if (collision.gameObject.tag == "Dragon" && isAttacking)
-        {
-            dragon.DragonDamage(2);
-        }
-        if (collision.gameObject.tag == "Bug" && !isAttacking)
+        if (collision.gameObject.tag == "Bug")
         {
            TakeDamage(1);
-        playerBody.velocity = -playerBody.velocity * 0.5f;
-        }
-        if (collision.gameObject.tag == "Bug" && isAttacking)
-        {
-            bug.BugDamage(2);
         }
         if (collision.gameObject.tag == "Spike")
         {

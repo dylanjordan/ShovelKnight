@@ -9,16 +9,12 @@ public class Bugs : MonoBehaviour
     [SerializeField] float Speed;
     [SerializeField] GameObject currentCam;
 
-    public int _bugMaxHealth = 2;
-    public int _bugCurrentHealth;
-
     Rigidbody2D body;
     Transform bugTrans;
 
     // Start is called before the first frame update
     void Start()
     {
-        _bugCurrentHealth = _bugMaxHealth;
 
         bugTrans = GetComponent<Transform>();
         body = GetComponent<Rigidbody2D>();
@@ -43,11 +39,6 @@ public class Bugs : MonoBehaviour
         }
 
         if (collision.collider.tag == "Weapon")
-        {
-            Debug.Log("Welp");
-        }
-
-        if (_bugCurrentHealth == 0)
         {
             Destroy(gameObject);
             SoundManager.PlaySound("bugDeath");
@@ -84,18 +75,5 @@ public class Bugs : MonoBehaviour
         {
             bugTrans.rotation = Quaternion.Euler(0, 180, 0);
         }
-    }
-    public void BugDamage(int damage)
-    {
-        _bugCurrentHealth -= damage;
-
-        //if (_bugcurrentHealth > 0)
-        //{
-
-        //}
-        //else
-        //{
-
-        //}
     }
 }

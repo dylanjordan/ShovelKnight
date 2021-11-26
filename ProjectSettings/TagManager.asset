@@ -13,6 +13,7 @@ TagManager:
   - Platform
   - fireball
   - dirtblock
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - UI
   - MoreUI
   - Fireball
-  - 
+  - Weapon
   - 
   - 
   - 
