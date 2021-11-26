@@ -8964,6 +8964,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3479108019081967621, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3879963171167427957, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: m_Name
       value: Knight
@@ -9094,3 +9098,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
+--- !u!4 &3879963169305287027 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3479108019081967621, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
+  m_PrefabInstance: {fileID: 3879963169305287026}
+  m_PrefabAsset: {fileID: 0}
