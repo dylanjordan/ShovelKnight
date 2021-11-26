@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class ItemBehavior : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    [SerializeField] GameObject Player;
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player")
-        {
-            Destroy(this.transform.gameObject);
-            Debug.Log("YOU GOT A COIIIIIIIIIIIIIIIIIIIIIIIIIN!!!!");
-        }
+        ItemCount.itemAmount++;
+        SoundManager.PlaySound("coinImpact");
+        Destroy(gameObject);
     }
 }
+
