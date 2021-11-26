@@ -12,6 +12,7 @@ TagManager:
   - Ladder
   - Platform
   - fireball
+  - dirtblock
   layers:
   - Default
   - TransparentFX
