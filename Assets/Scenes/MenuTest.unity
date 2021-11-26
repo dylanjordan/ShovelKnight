@@ -323,7 +323,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292149503
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -892,6 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e6fd8941042c04ea2ba1d110079373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 0}
 --- !u!4 &741026657
 Transform:
   m_ObjectHideFlags: 0
@@ -1078,8 +1079,8 @@ Transform:
   m_LocalPosition: {x: -810.30927, y: -522.39795, z: -662.96497}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1051430146}
   - {fileID: 970697452}
+  - {fileID: 1051430146}
   m_Father: {fileID: 272590014}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1114,7 +1115,7 @@ RectTransform:
   - {fileID: 793597002}
   - {fileID: 370295187}
   m_Father: {fileID: 930851466}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1152,7 +1153,7 @@ RectTransform:
   - {fileID: 1644259387}
   - {fileID: 1754929364}
   m_Father: {fileID: 930851466}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
