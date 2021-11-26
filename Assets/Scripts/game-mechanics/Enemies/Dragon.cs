@@ -64,8 +64,9 @@ public class Dragon : MonoBehaviour
         var fireball = Instantiate(fireballPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
 
         fireball.GetComponent<Rigidbody2D>().velocity = (playerTrans.position - transform.position).normalized * fireballSpeed;
+        SoundManager.PlaySound("dragonAttack");
 
-        Destroy(fireball, 5);
+        Destroy(fireball, 3);
     }
 
     bool canAttack()

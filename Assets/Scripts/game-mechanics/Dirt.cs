@@ -6,10 +6,11 @@ public class Dirt : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" && Input.GetKey(KeyCode.E))
+        if (collision.collider.tag == "Weapon")
         {
             Destroy(gameObject);
-            SoundManager.PlaySound("dirtBreak");
+
         }
     }
 }
+

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 49408287908486683}
   - component: {fileID: 1499201530926717380}
   - component: {fileID: 1499201530926717435}
-  - component: {fileID: 1499201530926717382}
-  m_Layer: 0
+  - component: {fileID: 5947302322595133059}
+  m_Layer: 3
   m_Name: Dirt
   m_TagString: dirtblock
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1499201530926717382
+--- !u!114 &5947302322595133059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,6 +119,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6636399413281442450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b660d6adccb9c84982371d3c948e9f0, type: 3}
+  m_Script: {fileID: 11500000, guid: db4a04e2b22d2f74f88917ea6e15827c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
