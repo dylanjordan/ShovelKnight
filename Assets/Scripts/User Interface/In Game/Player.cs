@@ -19,10 +19,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            TakeDamage(1);
-        }
         if (_currentHealth == 0)
         {
             Destroy(gameObject);

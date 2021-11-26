@@ -32,10 +32,24 @@ public class Bugs : MonoBehaviour
         {
             body.velocity = new Vector2(0, body.velocity.y);
         }
+
+        if (collision.collider.tag == "Weapon")
+        {
+            Debug.Log("Welp");
+        }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        body.velocity = new Vector2(0, body.velocity.y);
+        if (collision.collider.tag == "Player")
+        {
+            body.velocity = new Vector2(0, body.velocity.y);
+        }
+
+        if (collision.collider.tag == "Weapon")
+        {
+            body.AddForce(transform.up * 10, ForceMode2D.Impulse);
+            body.AddForce(transform.right * 10, ForceMode2D.Impulse);
+        }
     }
 }
