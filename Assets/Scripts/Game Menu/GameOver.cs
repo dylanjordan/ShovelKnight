@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameOver : MonoBehaviour
@@ -13,13 +14,18 @@ public class GameOver : MonoBehaviour
     {
         if (player._currentHealth == 0)
         {
-            gameOver.SetActive(true);
-            Time.timeScale = 0f;
+            // gameOver.SetActive(true);
+            SceneManager.LoadScene("GameOver");
+            Debug.Log("GAME OVER");
         }
         else
         {
             gameOver.SetActive(false);
             Time.timeScale = 1f;
         }
+    }
+    public void EndGame()
+    {
+        Debug.Log("GAME OVER");
     }
 }
