@@ -27,10 +27,15 @@ public class Dragon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            DragonDamage(1);
+        }
         if (_dragonCurrentHealth == 0)
         {
             Destroy(gameObject);
             SoundManager.PlaySound("dragonDeath");
+            new WaitForSeconds(5);
             SceneManager.LoadScene("Winner");
         }
         if ((currentCam.activeInHierarchy == true))
