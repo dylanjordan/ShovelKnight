@@ -25,4 +25,17 @@ public class Bugs : MonoBehaviour
             body.velocity = new Vector2(-horizontalMoveSpeed, body.velocity.y);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+            body.velocity = new Vector2(0, body.velocity.y);
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        body.velocity = new Vector2(0, body.velocity.y);
+    }
 }

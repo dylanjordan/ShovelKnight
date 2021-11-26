@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject player;
 
+    [SerializeField] private Player _player = new Player();
+
     Transform trans;
     Rigidbody2D body;
 
@@ -82,6 +84,14 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
             player.transform.parent = collision.gameObject.transform;
+        }
+        if (collision.collider.tag == "Enemy")
+        {
+            Debug.Log("OW");
+            body.AddForce(transform.up * 10, ForceMode2D.Impulse);
+            body.AddForce(transform.right * 10, ForceMode2D.Impulse);
+            _player.TakeDamage(1);
+
         }
     }
 

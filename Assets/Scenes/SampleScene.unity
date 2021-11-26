@@ -622,8 +622,8 @@ GameObject:
   - component: {fileID: 676274091}
   - component: {fileID: 676274090}
   m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
+  m_Name: Bug
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -903,7 +903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171615629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15119958, y: 1.5655191, z: -0.022593498}
+  m_LocalPosition: {x: 0.15119958, y: 1.2, z: -0.022593498}
   m_LocalScale: {x: 3.1585, y: 0.8561, z: 1}
   m_Children: []
   m_Father: {fileID: 90080553}
@@ -1667,6 +1667,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3879963171167427967, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
   m_PrefabInstance: {fileID: 3879963169305287026}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1903584106 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3879963171167427961, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
+  m_PrefabInstance: {fileID: 3879963169305287026}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903584101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d07f17af375df4e4c8ed86e37d504830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1932529883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,6 +2095,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1903584101}
+    - target: {fileID: 3879963171167427960, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1903584106}
     - target: {fileID: 3879963171167427960, guid: c5c914c6f002dc646881f1b4f1f073ab, type: 3}
       propertyPath: jumpForce
       value: 37
