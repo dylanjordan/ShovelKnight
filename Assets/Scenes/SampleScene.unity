@@ -3728,7 +3728,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1497284789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39e6fd8941042c04ea2ba1d110079373, type: 3}
+  m_Script: {fileID: 11500000, guid: 591e68702cb696f43a8536d608a821af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 0}
@@ -6134,7 +6134,8 @@ GameObject:
   - component: {fileID: 1976939704}
   - component: {fileID: 1976939703}
   - component: {fileID: 1976939705}
-  m_Layer: 0
+  - component: {fileID: 1976939706}
+  m_Layer: 3
   m_Name: Square (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -6232,6 +6233,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1976939706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976939702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9c528c85e295d4fae183bff4de64e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTrans: {fileID: 1903584102}
+  fireballPrefab: {fileID: 6124115456066702574, guid: 7ef7002f238edbf46b3be58173465b97, type: 3}
+  currentCam: {fileID: 1789581334}
+  fireballSpeed: 20
+  DragonHealthUI: {fileID: 0}
 --- !u!1 &1977631259
 GameObject:
   m_ObjectHideFlags: 0
