@@ -11,15 +11,17 @@ TagManager:
   - Wall
   - Ladder
   - Platform
+  - fireball
+  - dirtblock
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - MoreUI
-  - 
+  - Fireball
   - 
   - 
   - 

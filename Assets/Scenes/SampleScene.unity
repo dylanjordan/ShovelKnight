@@ -3985,10 +3985,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0.85490197, b: 1, a: 0.3882353}
-    m_HighlightedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
-    m_PressedColor: {r: 0, g: 0.85490197, b: 1, a: 0.8784314}
-    m_SelectedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
+    m_NormalColor: {r: 0.9464323, g: 0.40899786, b: 0.9528302, a: 0.3882353}
+    m_HighlightedColor: {r: 0.9058824, g: 0.3921569, b: 0.91372555, a: 0.7019608}
+    m_PressedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.8784314}
+    m_SelectedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.7019608}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4621,7 +4621,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1497284789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39e6fd8941042c04ea2ba1d110079373, type: 3}
+  m_Script: {fileID: 11500000, guid: 591e68702cb696f43a8536d608a821af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 1421618919}
@@ -4686,10 +4686,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0.85490197, b: 1, a: 0.3882353}
-    m_HighlightedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
-    m_PressedColor: {r: 0, g: 0.85490197, b: 1, a: 0.8784314}
-    m_SelectedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
+    m_NormalColor: {r: 0.9464323, g: 0.40899786, b: 0.9528302, a: 0.3882353}
+    m_HighlightedColor: {r: 0.9058824, g: 0.3921569, b: 0.91372555, a: 0.7019608}
+    m_PressedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.8784314}
+    m_SelectedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.7019608}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4858,9 +4858,10 @@ GameObject:
   - component: {fileID: 1550910241}
   - component: {fileID: 1550910240}
   - component: {fileID: 1550910239}
+  - component: {fileID: 1550910242}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Spike
+  m_TagString: dirtblock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6294,10 +6295,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0.85490197, b: 1, a: 0.3882353}
-    m_HighlightedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
-    m_PressedColor: {r: 0, g: 0.85490197, b: 1, a: 0.8784314}
-    m_SelectedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
+    m_NormalColor: {r: 0.9464323, g: 0.40899786, b: 0.9528302, a: 0.3882353}
+    m_HighlightedColor: {r: 0.9058824, g: 0.3921569, b: 0.91372555, a: 0.7019608}
+    m_PressedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.8784314}
+    m_SelectedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.7019608}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6925,10 +6926,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0.85490197, b: 1, a: 0.3882353}
-    m_HighlightedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
-    m_PressedColor: {r: 0, g: 0.85490197, b: 1, a: 0.8784314}
-    m_SelectedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
+    m_NormalColor: {r: 0.9464323, g: 0.40899786, b: 0.9528302, a: 0.3882353}
+    m_HighlightedColor: {r: 0.9058824, g: 0.3921569, b: 0.91372555, a: 0.7019608}
+    m_PressedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.8784314}
+    m_SelectedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.7019608}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -7022,7 +7023,8 @@ GameObject:
   - component: {fileID: 1976939704}
   - component: {fileID: 1976939703}
   - component: {fileID: 1976939705}
-  m_Layer: 0
+  - component: {fileID: 1976939706}
+  m_Layer: 3
   m_Name: Square (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7120,6 +7122,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1976939706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976939702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9c528c85e295d4fae183bff4de64e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTrans: {fileID: 1903584102}
+  fireballPrefab: {fileID: 6124115456066702574, guid: 7ef7002f238edbf46b3be58173465b97, type: 3}
+  currentCam: {fileID: 1789581334}
+  fireballSpeed: 20
+  DragonHealthUI: {fileID: 0}
 --- !u!1 &1977631259
 GameObject:
   m_ObjectHideFlags: 0
@@ -7709,7 +7728,7 @@ GameObject:
   - component: {fileID: 2143743949}
   - component: {fileID: 2143743952}
   m_Layer: 5
-  m_Name: OptionsButton
+  m_Name: ControlsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7756,10 +7775,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0.85490197, b: 1, a: 0.3882353}
-    m_HighlightedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
-    m_PressedColor: {r: 0, g: 0.85490197, b: 1, a: 0.8784314}
-    m_SelectedColor: {r: 0, g: 0.85490197, b: 1, a: 0.7019608}
+    m_NormalColor: {r: 0.9464323, g: 0.40899786, b: 0.9528302, a: 0.3882353}
+    m_HighlightedColor: {r: 0.9058824, g: 0.3921569, b: 0.91372555, a: 0.7019608}
+    m_PressedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.8784314}
+    m_SelectedColor: {r: 0.90588236, g: 0.39215687, b: 0.9137255, a: 0.7019608}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

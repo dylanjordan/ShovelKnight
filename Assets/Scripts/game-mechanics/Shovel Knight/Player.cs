@@ -83,5 +83,9 @@ public class Player : MonoBehaviour
         {
            TakeDamage(8);
         }
+        if (collision.gameObject.tag == "fireball")
+        {
+            TakeDamage(2);
+        }
     }
 }
