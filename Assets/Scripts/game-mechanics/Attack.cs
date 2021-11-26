@@ -46,6 +46,7 @@ public class Attack : MonoBehaviour
         m_Collider.enabled = true;
         Debug.Log("smack");
         Debug.Log("Collider.enabled = " + m_Collider.enabled);
+        SoundManager.PlaySound("playerAttack");
     }
 
     bool ShovelClear()

@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
 
-    public static AudioClip playerHitSound, jumpSound, walkSound, playerDeath, dragonAttack, dragonDeath, bugDeath, dragonHurt, coinImpact, dirtBreak;
+    public static AudioClip playerHitSound, jumpSound, walkSound, playerDeath, dragonAttack, dragonDeath, bugDeath, dragonHurt, coinImpact, dirtBreak, playerAttack;
     static AudioSource audioSrc;
     void Start()
     {
@@ -21,6 +21,7 @@ public class SoundManager : MonoBehaviour
         dragonHurt = Resources.Load<AudioClip>("dragon_hurt");
         coinImpact = Resources.Load<AudioClip>("Coin_impact");
         dirtBreak = Resources.Load<AudioClip>("dirt_break");
+        playerAttack = Resources.Load<AudioClip>("KnightAttack");
 
         audioSrc = GetComponent<AudioSource>();
 
@@ -69,6 +70,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case "dirtBreak":
                 audioSrc.PlayOneShot(dirtBreak);
+                break;
+            case "playerAttack":
+                audioSrc.PlayOneShot(playerAttack);
                 break;
         }
     }
