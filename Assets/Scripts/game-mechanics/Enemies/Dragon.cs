@@ -14,7 +14,7 @@ public class Dragon : MonoBehaviour
 
     bool initalDelayApplied;
 
-    private int _dragonMaxHealth = 16;
+    private int _dragonMaxHealth = 6;
     private int _dragonCurrentHealth;
 
     public HealthBar DragonHealthUI;

@@ -119,6 +119,7 @@ public class PlayerController : MonoBehaviour
                 if (collision.contacts[i].normal.y > 0.5)
                 {
                     isGrounded = true;
+                    player.transform.parent = null;
                 }
             }
         }

@@ -8,11 +8,12 @@ public class Attack : MonoBehaviour
     [SerializeField] Transform ShovelPosition;
     [SerializeField] Transform Trans;
 
-    Collider2D m_Collider;
+    private Collider2D m_Collider;
 
     float timeToShovelClear = 0;
     [SerializeField] float clearDelay = 0.5f;
     bool playSound = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,7 @@ public class Attack : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             AttackOnce();
+
         }
     }
 
@@ -48,6 +50,7 @@ public class Attack : MonoBehaviour
         m_Collider.enabled = true;
         Debug.Log("smack");
         Debug.Log("Collider.enabled = " + m_Collider.enabled);
+
         if (playSound)
         {
             SoundManager.PlaySound("playerAttack");

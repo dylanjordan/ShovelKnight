@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    Attack attack;
     public Rigidbody2D playerBody;
 
     public int _maxHealth = 8;
@@ -22,7 +23,7 @@ public class Player : MonoBehaviour
     {
         playerBody = GetComponent<Rigidbody2D>();
 
-        if (_currentHealth == 0)
+        if (_currentHealth <= 0)
         {
             Destroy(gameObject);
             SceneManager.LoadScene("GameOver");
@@ -60,6 +61,10 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "fireball")
         {
             TakeDamage(2);
+        }
+        if (collision.collider.tag == "dirtblock")
+        {
+            Destroy(collision.gameObject);
         }
     }
 }
