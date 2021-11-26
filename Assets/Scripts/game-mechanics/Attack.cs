@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
+
     [SerializeField] Transform ShovelPosition;
     [SerializeField] Transform Trans;
 
@@ -18,7 +19,7 @@ public class Attack : MonoBehaviour
         ShovelPosition.GetComponent<Transform>();
         Trans.GetComponent<Transform>();
         m_Collider = GetComponent<Collider2D>();
-        
+
     }
 
     void Update()

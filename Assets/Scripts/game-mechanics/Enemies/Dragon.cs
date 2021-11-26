@@ -58,15 +58,6 @@ public class Dragon : MonoBehaviour
         _dragonCurrentHealth -= damage;
         DragonHealthUI.SetHealth(_dragonCurrentHealth);
         SoundManager.PlaySound("dragonHurt");
-
-        //if(_dragonCurrentHealth > 0)
-        //{
-
-        //}
-        //else
-        //{
-
-        //}
     }
     void Attack()
     {
@@ -95,6 +86,7 @@ public class Dragon : MonoBehaviour
         if (collision.collider.tag == "Weapon")
         {
             DragonDamage(2);
+
         }
     }
 
