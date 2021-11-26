@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+    [SerializeField] Slider volumeSlider;
+
     public static AudioClip playerHitSound, jumpSound, walkSound, playerDeath, dragonAttack, dragonDeath, bugDeath, dragonHurt, coinImpact;
     static AudioSource audioSrc;
-
-    // Start is called before the first frame update
     void Start()
     {
         jumpSound = Resources.Load<AudioClip>("Jump");
@@ -21,6 +21,21 @@ public class SoundManager : MonoBehaviour
         coinImpact = Resources.Load<AudioClip>("Coin_impact");
 
         audioSrc = GetComponent<AudioSource>();
+
+        if (!PlayerPrefs.HasKey("Menu Sound #1"))
+        {
+            PlayerPrefs.SetFloat("Menu Sound #1", 1);
+        }
+        else
+        {
+            Load();
+        }
+    }
+    public void ChangeVolume()
+    {
+        // volume is same as the slider percentage
+        AudioListener.volume = volumeSlider.value;
+        Save();
     }
     public static void PlaySound(string clip)
     {
@@ -51,5 +66,15 @@ public class SoundManager : MonoBehaviour
                 audioSrc.PlayOneShot(coinImpact);
                 break;
         }
+    }
+    private void Load()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("Menu Sound #1");
+
+    }
+    private void Save()
+    {
+        PlayerPrefs.SetFloat("Menu Sound #1", volumeSlider.value);
+
     }
 }
