@@ -133,7 +133,10 @@ public class PlayerController : MonoBehaviour
             body.AddForce(transform.up * 10, ForceMode2D.Impulse);
             body.AddForce(transform.right * 10, ForceMode2D.Impulse);
             _player.TakeDamage(1);
-
+        }
+        if (collision.collider.tag == "fireball")
+        {
+            Destroy(collision.gameObject);
         }
     }
 

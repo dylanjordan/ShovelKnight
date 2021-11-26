@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dirt : MonoBehaviour
+public class Fireball : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" && Input.GetKey(KeyCode.E))
+        if (collision.collider.tag == "Wall")
         {
             Destroy(gameObject);
-            SoundManager.PlaySound("dirtBreak");
         }
     }
 }
