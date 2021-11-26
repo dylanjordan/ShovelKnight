@@ -41,27 +41,25 @@ public class Bugs : MonoBehaviour
         {
             body.velocity = new Vector2(0, body.velocity.y);
         }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        body.velocity = new Vector2(0, body.velocity.y);
-    }
-}
 
         if (_bugCurrentHealth == 0)
         {
             Destroy(gameObject);
             SoundManager.PlaySound("bugDeath");
         }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
+
         if (collision.gameObject.tag == "Wall")
         {
-            Speed = Speed * -1; 
+            Speed = Speed * -1;
         }
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        body.velocity = new Vector2(0, body.velocity.y);
+    }
+
+
     void BugDirection()
     {
         if (Speed < 0)
