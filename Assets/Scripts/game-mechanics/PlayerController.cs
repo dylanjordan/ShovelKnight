@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject player;
+
     Transform trans;
     Rigidbody2D body;
 
@@ -75,6 +77,19 @@ public class PlayerController : MonoBehaviour
                     isGrounded = true;
                 }
             }
+        }
+        if(collision.gameObject.CompareTag("Platform") && !isGrounded)
+        {
+            isGrounded = true;
+            player.transform.parent = collision.gameObject.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            player.transform.parent = null;
         }
     }
 
