@@ -13262,6 +13262,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7135745810536761079, guid: 694efb60f6a52b240a1a5e47b4bf2562, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12.702135
+      objectReference: {fileID: 0}
+    - target: {fileID: 7135745810536761079, guid: 694efb60f6a52b240a1a5e47b4bf2562, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -425.8697
+      objectReference: {fileID: 0}
     - target: {fileID: 7506169650501792344, guid: 694efb60f6a52b240a1a5e47b4bf2562, type: 3}
       propertyPath: m_TagString
       value: Untagged
