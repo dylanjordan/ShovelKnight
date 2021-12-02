@@ -3,17 +3,27 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Dragon
+  - Bug
+  - Spike
+  - Wall
+  - Ladder
+  - Platform
+  - fireball
+  - dirtblock
+  - Weapon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
-  - 
-  - 
-  - 
+  - MoreUI
+  - Fireball
+  - Weapon
   - 
   - 
   - 

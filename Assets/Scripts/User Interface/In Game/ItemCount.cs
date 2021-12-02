@@ -6,18 +6,15 @@ using UnityEngine.UI;
 public class ItemCount : MonoBehaviour
 {
     Text text;
-    public static int itemAmount;
+    public static int itemAmount = 0;
     void Start()
     {
+        itemAmount = 0;
         text = GetComponent<Text>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            itemAmount++;
-        }
         text.text = itemAmount.ToString();
     }
 }
