@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private bool jumpInput;
     private bool isGrounded;
     private bool isClimbing;
+    private bool isWalking;
 
     private float playerGravity = 7f;
 
@@ -73,12 +74,18 @@ public class PlayerController : MonoBehaviour
             trans.position -= transform.right * Time.deltaTime * speed;
             trans.rotation = Quaternion.Euler(0, 0, 0);
             SoundManager.PlaySound("walkSound");
+            isWalking = true;
         }
         if (Input.GetKey(KeyCode.D))
         {
             trans.position -= transform.right * Time.deltaTime * speed;
             trans.rotation = Quaternion.Euler(0, 180, 0);
             SoundManager.PlaySound("walkSound");
+            isWalking = true;
+        }
+        if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        {
+            isWalking = false;
         }
     }
 
@@ -166,5 +173,20 @@ public class PlayerController : MonoBehaviour
     public float GetSpeed()
     {
         return speed;
+    }
+
+    public bool GetIsWalking()
+    {
+        return isWalking;
+    }
+
+    public bool GetIsClimbing()
+    {
+        return isClimbing;
+    }
+
+    public bool GetIsGrounded()
+    {
+        return isGrounded;
     }
 }
