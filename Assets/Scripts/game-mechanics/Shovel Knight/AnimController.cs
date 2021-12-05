@@ -7,6 +7,7 @@ public class AnimController : MonoBehaviour
 
     Animator anim;
 
+    Attack attack;
     PlayerController playerMovement;
     Player player;
 
@@ -15,6 +16,7 @@ public class AnimController : MonoBehaviour
     {
          player = GetComponent<Player>();
         anim = GetComponent<Animator>();
+        attack = GetComponent<Attack>();
         playerMovement = GetComponent<PlayerController>();
     }
 
@@ -46,6 +48,15 @@ public class AnimController : MonoBehaviour
         else
         {
             anim.SetBool("Climbing", false);
+        }
+
+        if (attack.GetIsAttacking())
+        {
+            anim.SetBool("Attack", true);
+        }
+        else
+        {
+            anim.SetBool("Attack", false);
         }
     }
 }
