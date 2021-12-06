@@ -915,6 +915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &89862721
 MonoBehaviour:
@@ -2717,6 +2718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
+  optionMenu: {fileID: 0}
   player: {fileID: 1903584106}
 --- !u!4 &422195735 stripped
 Transform:
@@ -3411,6 +3413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &530356648
 MonoBehaviour:
@@ -3573,6 +3576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &550082343
 MonoBehaviour:
@@ -4085,6 +4089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &589034507
 MonoBehaviour:
@@ -4759,6 +4764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 412796811}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &692033271
 MonoBehaviour:
@@ -5252,6 +5258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &762143424
 MonoBehaviour:
@@ -7193,6 +7200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1281960229
 MonoBehaviour:
@@ -7713,6 +7721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1335704729
 MonoBehaviour:
@@ -9075,6 +9084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &1539926585
 GameObject:
@@ -9206,6 +9216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1563521318
 MonoBehaviour:
@@ -9816,7 +9827,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
-  player: {fileID: 0}
+  optionMenu: {fileID: 1672021542}
+  player: {fileID: 1903584106}
 --- !u!114 &1672021544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9973,6 +9985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!82 &1685436415
 AudioSource:
@@ -11347,6 +11360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!4 &1873063958 stripped
 Transform:
@@ -12245,6 +12259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 412796811}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!4 &1960682534 stripped
 Transform:
@@ -13400,6 +13415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
+  optionMenu: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &2145380658
 GameObject:

@@ -7,8 +7,11 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject optionMenu;
+    public GameObject settingMenu;
+    public GameObject controlsMenu;
     public static bool isPaused = false;
-    [SerializeField] Player player;
+    public static bool isOption = false;
     
     // Update is called once per frame
     void Update()
@@ -23,20 +26,30 @@ public class PauseMenu : MonoBehaviour
             {
                 PauseGame();
             }
-       }
-        if (player._currentHealth == 0)
-        {
-            GameOver();
-            Destroy(gameObject);
         }
-
     }
     
    public void PauseGame()
     {
         pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
         isPaused = true;
+
+        if (settingMenu.activeInHierarchy)
+        {
+            settingMenu.SetActive(false);
+        }
+
+        if (controlsMenu.activeInHierarchy)
+        {
+            controlsMenu.SetActive(false);
+        }
+
+        if (optionMenu.activeInHierarchy)
+        {
+            optionMenu.SetActive(false);
+        }
+     
+
     }
 
     public void ResumeGame()
