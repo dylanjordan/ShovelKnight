@@ -8,7 +8,7 @@ public class GameOver : MonoBehaviour
 {
     public GameObject gameOver;
     
-    Player player;
+    [SerializeField] Player player;
 
     // Update is called once per frame
     void Update()

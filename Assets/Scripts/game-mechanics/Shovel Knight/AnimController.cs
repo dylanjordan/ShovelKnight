@@ -16,7 +16,6 @@ public class AnimController : MonoBehaviour
     {
          player = GetComponent<Player>();
         anim = GetComponent<Animator>();
-        attack = GetComponent<Attack>();
         playerMovement = GetComponent<PlayerController>();
     }
 
