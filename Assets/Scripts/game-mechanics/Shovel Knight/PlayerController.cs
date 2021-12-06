@@ -108,10 +108,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             trans.position += transform.right * Time.deltaTime * speed;
+            trans.rotation = Quaternion.Euler(0, 0, 0);
         }
         if (Input.GetKey(KeyCode.A))
         {
             trans.position += transform.right * Time.deltaTime * speed;
+            trans.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
 
