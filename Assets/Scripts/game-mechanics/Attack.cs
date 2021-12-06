@@ -15,7 +15,7 @@ public class Attack : MonoBehaviour
     [SerializeField] float clearDelay = 0.3f;
     [SerializeField] bool whichShovel;
     bool playSound = true;
-    bool isAttacking;
+    public bool isAttacking;
 
 
     // Start is called before the first frame update
