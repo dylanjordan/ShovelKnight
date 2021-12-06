@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
         }
         if (collision.gameObject.tag == "fireball")
         {
-            TakeDamage(2);
+            TakeDamage(3);
         }
         if (collision.collider.tag == "dirtblock")
         {
