@@ -86,7 +86,7 @@ public class Dragon : MonoBehaviour
     {
         if (collision.collider.tag == "Weapon")
         {
-            DragonDamage(2);
+            DragonDamage(1);
 
         }
     }
