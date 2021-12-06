@@ -7,11 +7,13 @@ public class Attack : MonoBehaviour
 
     [SerializeField] Transform ShovelPosition;
     [SerializeField] Transform Trans;
+    [SerializeField] PlayerController shieldjump;
 
     private Collider2D m_Collider;
 
     float timeToShovelClear = 0;
     [SerializeField] float clearDelay = 0.3f;
+    [SerializeField] bool whichShovel;
     bool playSound = true;
     bool isAttacking;
 
@@ -40,7 +42,12 @@ public class Attack : MonoBehaviour
             Debug.Log("Collider.enabled = " + m_Collider.enabled);
             playSound = true;
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E) && shieldjump.GetIsGrounded() && whichShovel)
+        {
+            AttackOnce();
+            isAttacking = true;
+        }
+        if (Input.GetKey(KeyCode.E) && !shieldjump.GetIsGrounded() && !whichShovel)
         {
             AttackOnce();
             isAttacking = true;
