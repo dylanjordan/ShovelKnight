@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private bool isClimbing;
     private bool isWalking;
-    private bool isAttacking;
 
     private float playerGravity = 7f;
 
