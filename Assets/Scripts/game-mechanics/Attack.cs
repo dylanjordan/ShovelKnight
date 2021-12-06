@@ -11,7 +11,7 @@ public class Attack : MonoBehaviour
     private Collider2D m_Collider;
 
     float timeToShovelClear = 0;
-    [SerializeField] float clearDelay = 0.5f;
+    [SerializeField] float clearDelay = 0.3f;
     bool playSound = true;
     bool isAttacking;
 
@@ -35,6 +35,7 @@ public class Attack : MonoBehaviour
     {
         if (ShovelClear())
         {
+            isAttacking = false;
             m_Collider.enabled = false;
             Debug.Log("Collider.enabled = " + m_Collider.enabled);
             playSound = true;
@@ -42,6 +43,7 @@ public class Attack : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             AttackOnce();
+            isAttacking = true;
         }
     }
 
@@ -68,7 +70,6 @@ public class Attack : MonoBehaviour
         }
         else
         {
-            isAttacking = false;
             return false;
         }
     }

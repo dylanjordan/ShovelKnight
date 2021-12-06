@@ -7,7 +7,7 @@ public class AnimController : MonoBehaviour
 
     Animator anim;
 
-    Attack attack;
+    [SerializeField] Attack attack;
     PlayerController playerMovement;
     Player player;
 
