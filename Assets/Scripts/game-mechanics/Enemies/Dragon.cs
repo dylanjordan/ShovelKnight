@@ -6,6 +6,7 @@ using UnityEngine;
 public class Dragon : MonoBehaviour
 {
     [SerializeField] Transform playerTrans;
+    [SerializeField] Transform shotTrans;
     [SerializeField] GameObject fireballPrefab;
     [SerializeField] GameObject currentCam;
     [SerializeField] float fireballSpeed;
@@ -61,7 +62,7 @@ public class Dragon : MonoBehaviour
     }
     void Attack()
     {
-        var fireball = Instantiate(fireballPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+        var fireball = Instantiate(fireballPrefab, shotTrans.position, Quaternion.Euler(new Vector3(0, 0, 0)));
 
         fireball.GetComponent<Rigidbody2D>().velocity = (playerTrans.position - transform.position).normalized * fireballSpeed;
         SoundManager.PlaySound("dragonAttack");
