@@ -916,7 +916,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!114 &89862721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2719,7 +2720,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
   optionMenu: {fileID: 0}
-  player: {fileID: 1903584106}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!4 &422195735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1460989060727475646, guid: 06fb3ea12349d3d418d272a9c0b62ff8, type: 3}
@@ -3414,7 +3416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!114 &530356648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3577,7 +3580,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!114 &550082343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4089,8 +4093,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
-  optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  optionMenu: {fileID: 1672021542}
+  settingMenu: {fileID: 1563521315}
+  controlsMenu: {fileID: 589034504}
 --- !u!114 &589034507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4765,7 +4770,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 412796811}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!114 &692033271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5259,7 +5265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!114 &762143424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7201,7 +7208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!114 &1281960229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7722,7 +7730,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!114 &1335704729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9085,7 +9094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!1 &1539926585
 GameObject:
   m_ObjectHideFlags: 0
@@ -9216,8 +9226,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
-  optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  optionMenu: {fileID: 1672021542}
+  settingMenu: {fileID: 1563521315}
+  controlsMenu: {fileID: 589034504}
 --- !u!114 &1563521318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9828,7 +9839,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
   optionMenu: {fileID: 1672021542}
-  player: {fileID: 1903584106}
+  settingMenu: {fileID: 1563521315}
+  controlsMenu: {fileID: 589034504}
 --- !u!114 &1672021544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9985,8 +9997,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
-  optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  optionMenu: {fileID: 1672021542}
+  settingMenu: {fileID: 1563521315}
+  controlsMenu: {fileID: 589034504}
 --- !u!82 &1685436415
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11361,7 +11374,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!4 &1873063958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1460989060727475646, guid: 06fb3ea12349d3d418d272a9c0b62ff8, type: 3}
@@ -12260,7 +12274,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 412796811}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!4 &1960682534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9016714466216394371, guid: 694efb60f6a52b240a1a5e47b4bf2562, type: 3}
@@ -13416,7 +13431,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1685436410}
   optionMenu: {fileID: 0}
-  player: {fileID: 0}
+  settingMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
 --- !u!1 &2145380658
 GameObject:
   m_ObjectHideFlags: 0
