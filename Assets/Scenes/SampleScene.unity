@@ -8124,7 +8124,7 @@ PrefabInstance:
       objectReference: {fileID: 1903584102}
     - target: {fileID: 5526743336760383199, guid: c2b946df553dc35419bb2c02c5774ae5, type: 3}
       propertyPath: fireballSpeed
-      value: 17
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5526743336760383199, guid: c2b946df553dc35419bb2c02c5774ae5, type: 3}
       propertyPath: DragonHealthUI

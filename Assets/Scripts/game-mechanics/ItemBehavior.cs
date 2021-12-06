@@ -8,9 +8,9 @@ public class ItemBehavior : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Destroy(gameObject);
             ItemCount.itemAmount++;
             SoundManager.PlaySound("coinImpact");
-            Destroy(gameObject);
         }
     }
 }
